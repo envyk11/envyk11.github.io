@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 3 | Actividad 05</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+    <meta charset="utf-8">
+    <meta name="Autor" content="Rodriguez Garcia Kaled de Jesus">
+    <meta name="Fecha" content="08/05/2025">
+    <meta name="Descripción" content="Formulario">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script>
+        function revisaDatos(){
+          let varCadena = "Resumen del formulario:\n"; 
+          let varForm =document.forms["frmRegistro"];
+          let varNombre = varForm.elements["txtNombre"]; 
+          varCadena += "\n - Nombre de usuario: " + varNombre.value;
+          let varClave = varForm.elements["passClave"]; 
+          varCadena += "\n - Contraseña: " + varClave.value;
+          let varTelefono= varForm.elements["txtTelefono"]; 
+          varCadena += "\n - Teléfono: +52 " + varTelefono.value;
+          let varCorreo =varForm.elements["txtCorreo"]; 
+          varCadena += "\n - Correo: " + varCorreo.value + "@upslp.edu.mx"; 
+          let varMensaje = varForm.elements["txtMensaje"];
+          varCadena+="\n - Mensaje: " + varMensaje.value;
+          alert(varCadena);
+        }
+    </script>
+</head>
+<body>
+    <h1>Unidad 3 | Actividad 05 :: Tema (Formulario)</h1>
+    <form  onsubmit="revisaDatos()" class="form-horizontal" name="frmRegistro" action="#" method="get">
+        <fieldset>
+        <legend>Registro de Usuario</legend>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtNombre">Nombre de usuario</label>  
+          <div class="col-md-6">
+          <input id="txtNombre" name="txtNombre" type="text" placeholder="Kaled de Jesus Rodriguez Garcia" class="form-control input-md" required="">
+          <span class="help-block">Escribe tu nombre completo</span>  
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="passClave">Contraseña</label>
+          <div class="col-md-5">
+            <input id="passClave" name="passClave" type="password" placeholder="" class="form-control input-md" required="">
+            <span class="help-block">Debe tener al menos 8 símbolos (únicamente letras y dígitos)</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtTelefono">Teléfono</label>
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-addon">+52</span>
+              <input id="txtTelefono" name="txtTelefono" class="form-control" placeholder="(444) 634 7716" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtCorreo">Correo Electrónico</label>
+          <div class="col-md-6">
+            <div class="input-group">
+              <input id="txtCorreo" name="txtCorreo" class="form-control" placeholder="ejemplo" type="text" required="">
+              <span class="input-group-addon">@upslp.edu.mx</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtMensaje">Mensaje</label>
+          <div class="col-md-4">                     
+            <textarea class="form-control" id="txtMensaje" name="txtMensaje">Escribe tu mensaje.</textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="btn_Enviar"></label>
+          <div class="col-md-4">
+            <input type="submit" id="btn_Enviar" name="btn_Enviar" class="btn btn-success">
+            <input type="reset" id="btnBorrar" name="btn btn-danger" class="btn btn-danger">
+          </div>
+        </div>
+        </fieldset>
+        </form>
+</body>
+</html>
