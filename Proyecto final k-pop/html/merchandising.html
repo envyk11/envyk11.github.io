@@ -1,103 +1,249 @@
-<html>
-<html lang="en" data-bs-theme="auto"><head>
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.122.0">
-    <title>Merchandising</title>
-    <link rel="icon" type="image/x-icon" href="K-pop logo.png">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/contacto_style.css">
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-  <body>
-<header data-bs-theme="dark">
-  <nav>
-    <ul>                                                                                                                                                                                                                        
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href='grupos.html'>Grupos</a></li>
-        <li><a href='albums.html'>Albums</a></li>
-        <li><a href='fandom.html'>Fandom</a></li>
-        <li><a href='conciertos.html'>Conciertos</a></li>
-        <li><a href='merchandising.html'>Merchandising</a></li>
-        <li><a href='contacto.html'>Contacto</a></li>
-        <li><a href='referencias.html'>Referencias</a></li>
-    </ul>
-</nav>
+    <meta name="description" content="Merchandising y marketing de K-Pop">
+    <meta name="author" content="Tu Nombre">
+    <title>Merchandising y Marketing de K-Pop</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/K-pop_logo.svg/1200px-K-pop_logo.svg.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff77a9, #ae56c9);
+            color: #fdf6f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+        header {
+            background-color: rgba(0,0,0,0.85);
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            color: #fdf6f0;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 8px 12px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav ul li a:hover,
+        nav ul li a:focus {
+            background-color: #fdf6f0;
+            color: #ae56c9;
+            outline: none;
+        }
+        h2, h3 {
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin-top: 1.8rem;
+            margin-bottom: 0.6rem;
+            color: #ffe0f0;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 0.85rem;
+            text-align: justify;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .merch-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.7);
+        }
+        .marketing-section {
+            background-color: rgba(0,0,0,0.25);
+            border-radius: 15px;
+            padding: 25px 30px;
+            max-width: 950px;
+            margin: 3rem auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+        }
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            font-size: 1rem;
+            color: #fdf6f0aa;
+            letter-spacing: 0.08em;
+            margin-top: 4rem;
+            border-top: 1px solid #fdf6f040;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 1rem;
+                max-width: 100%;
+                padding: 0 15px;
+            }
+            .marketing-section {
+                margin: 2rem 1rem 3rem 1rem;
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href='grupos.html'>Grupos</a></li>
+            <li><a href='albums.html'>Albums</a></li>
+            <li><a href='fandom.html'>Fandom</a></li>
+            <li><a href='conciertos.html'>Conciertos</a></li>
+            <li><a href='merchandising.html' aria-current="page">Merchandising</a></li>
+            <li><a href='contacto.html'>Contacto</a></li>
+            <li><a href='referencias.html'>Referencias</a></li>
+        </ul>
+    </nav>
 </header>
+&nbsp;
+&nbsp;
 
-<p>Hoy en día hablar de publicidad es tan extenso como el K-Pop, un género musical proveniente de Corea del Sur (<em>Korean Pop</em>) que surge en los años 90. Actualmente su posicionamiento es global, y de acuerdo con <em>Spotify</em>, los 10 artistas surcoreanos más reproducidos en línea durante 2020 registraron un total combinado de 10.670 millones de reproducciones (<em>YONHAP NEWS AGENCY</em>, 2021).
+<main class="container" role="main" aria-label="Información sobre merchandising y marketing de K-Pop">
+    <h2>Merchandising de K-Pop</h2>
+&nbsp;
+&nbsp;
 
+    <!-- Contenido original del merchandising -->
+    <p>
+        Hoy en día hablar de publicidad es tan extenso como el K-Pop, un género musical proveniente de Corea del Sur (<em>Korean Pop</em>) que surge en los años 90. Actualmente su posicionamiento es global, y de acuerdo con <em>Spotify</em>, los 10 artistas surcoreanos más reproducidos en línea durante 2020 registraron un total combinado de 10.670 millones de reproducciones (<em>YONHAP NEWS AGENCY</em>, 2021).
+    </p>
+    <p>
+        Entre ellos se encuentran grupos muy conocidos como <em>BTS</em>, <em>Blackpink</em>, <em>Twice</em>, <em>Stray Kids</em>, <em>Red Velvet</em>, y <em>Exo</em>, entre otros. Las estrategias que han optado para hacer de este género musical un éxito involucran medios como el cine, arte, moda, maquillaje y, por supuesto, la publicidad.
+    </p>
+    <p>
+        Resulta lógico pensar que las estrategias de publicidad del K-Pop han sido tan exitosas para su posicionamiento que marcas globales como <em>Louis Vuitton</em>, MAC, <em>Hyundai</em> y Dior —por mencionar algunas— han apostado por elegir a integrantes o agrupaciones completas como embajadores de marca.
+    </p>
+    <p>
+        Sin embargo, no podemos dejar de lado el desarrollo de las estrategias publicitarias promocionales propias de los grupos del K-Pop que considero han sido fundamentales como medio de creación de identidad de marca.
+    </p>
+    <p>
+        De este modo, un aspecto que me entusiasma como estudiante de publicidad y como una fan del K-Pop es el <em>merchandising</em>, una estrategia de publicidad la cual “hace referencia a la promoción de bienes o servicios en un punto de venta determinado […] busca atraer a clientes potenciales de manera asertiva, a través de una presentación visual llamativa.” (Equipo docente IL3-UB, 2021).
+    </p>
+&nbsp;
+&nbsp;
 
+    <h3>Merchandising en el K-Pop</h3>
+    <p>
+        El <strong><em>merchandising</em> en el K-Pop</strong> es tan amplio que se puede elegir entre una gran variedad de opciones como ropa, peluches, accesorios, zapatos, materiales escolares, artículos del hogar, muebles, contenido multimedia en formato digital o físico, etc., los cuales van de la mano del <em>branding</em> perteneciente a cada grupo musical o bien pueden incluir una alianza de marca.
+    </p>
+    <p>
+        Pareciera que no hay mucha diferencia entre el <em>merchandising</em> del K-Pop y marcas como Disney, sin embargo, a pesar de las similitudes que podamos encontrar, la diferencia radica en la manera que presentan un producto o servicio a sus consumidores y el aprovechamiento de la imagen del grupo/solista, la realidad virtual, los videojuegos y el desarrollo de elementos del K-Pop.
+    </p>
+    <p>
+        Un ejemplo del aprovechamiento de la imagen son los <em>lightsticks</em>, unos palos de luz o “bong” en coreano (<em>Ticketmaster</em>, 2020), con diseños únicos de cada grupo y que se utilizan normalmente en conciertos. BIGBANG fue el primer grupo en crear un <em>lightstick</em> oficial, el cual tiene forma de corona que emite una luz dorada, uno de sus tres colores oficiales.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/BIGBANG_Lightstick.jpg/800px-BIGBANG_Lightstick.jpg" alt="Lightstick de BIGBANG" class="merch-image" />
+    <p>
+        El impacto del <em>lightstick</em> fue tan grande que desde entonces ha sido un elemento con el que cuenta la mayoría de los grupos. Es aquí donde podemos ver que el <em>merchandising</em> sirve incluso hasta para mejorar la experiencia de un evento.
+    </p>
+    <p>
+        Otro ejemplo de cómo los artículos con la imagen de los artistas son comercializados y utilizados para su promoción son los álbumes, los cuales normalmente incluyen el o los CD’s, un póster coleccionable, un libro de fotos (<em>photobook</em>), un libro de letras de las canciones (<em>lyric book</em>) y, por supuesto, una o varias <em>photocards</em> sorpresa.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/K-Pop_Album.jpg/800px-K-Pop_Album.jpg" alt="Álbum de K-Pop" class="merch-image" />
+    <p>
+        Es decir, unas tarjetas que contienen una fotografía por las cuales, me atrevo a decir, nos emocionamos mucho, pues siempre es excitante saber qué miembro de la banda nos tocó y mucho mejor si es de nuestros/nuestras <em>bias</em>, término que se utiliza para designar a nuestro integrante favorito.
+    </p>
+    <p>
+        Asimismo, otro ejemplo se encuentra en los puntos de venta, uno de los mayores enfoques que tiene el <em>merchandising</em>. BTS ha sido de los únicos grupos que ha implementado una <em>Pop Up Store</em>, una tienda temporal diseñada entorno a la marca ubicada en zonas estratégicas en diferentes países alrededor del mundo, aspecto que muy rara vez he podido encontrar en otras marcas y que sin duda hace la diferencia, pues genera mucha expectativa entre los fans la manera en que la tienda está diseñada y el diverso contenido que se vende.
+    </p>
+    <p>
+        Finalmente, la implementación de la tecnología y los videojuegos ha sido muy importante. La realidad virtual es un aspecto que ahora se ofrece al debutar un grupo, como es el caso de <em>Aespa</em>, un grupo perteneciente a <em>SM Entertainment</em> que presenta a sus integrantes de manera física y virtual.
+    </p>
+    <p>
+        Esto sin duda es un plus pues brinda contenido digital enfocado en la realidad virtual, obteniendo un mayor alcance del público. Esto mismo sucede con los videojuegos, un ejemplo clave es <em>League of Legends</em>, el cual desarrolló un grupo femenino virtual llamado K/DA conformado por diversas artistas del K-Pop, entre ellas <em>Soyeon</em> y <em>Miyeon</em> de (G)i-dle, <em>Jihyo</em>, <em>Sana</em> y <em>Chaeyoung</em> de <em>Twice</em>, quienes ya tienen un álbum para el videojuego llamado <em>All Out</em> disponible en plataformas como <em>Spotify</em>, <em>YouTube</em> y <em>Apple Music</em>.
+    </p>
+    <p>
+        En resumen, la publicidad sigue teniendo un papel sumamente importante para el posicionamiento y manejo de las marcas, pero sin lugar a dudas estrategias como el <em>merchandising</em> marcan la diferencia como hemos podido observar.
+    </p>
+    <p>
+        En el contexto del K-Pop el <em>merchandising</em> es fundamental como medio de creación de imagen de marca e incluso para generar lealtad y valor entre empresa-cliente, utilizando áreas de oportunidad como la tecnología y los videojuegos.
+    </p>
+    <p>
+        Además, sería muy interesante que marcas que no pertenecen al área del entretenimiento pudieran optar por esta estrategia publicitaria, pues sin duda desarrollar mercancía para uno como consumidor nos hace sentir incluidos, escuchados y nos da también una identidad.
+    </p>
+&nbsp;
+&nbsp;
 
-</p><p>Entre ellos se encuentran grupos muy conocidos como <em>BTS</em>, <em>Blackpink</em>, <em>Twice</em>, <em>Stray Kids</em>, <em>Red Velvet</em>, y <em>Exo</em>, entre otros. Las estrategias que han optado para hacer de este género musical un éxito involucran medios como el cine, arte, moda, maquillaje y, por supuesto, la publicidad.
+    <!-- Nueva sección de Marketing -->
+    <section class="marketing-section" aria-label="Marketing en el K-Pop">
+        <h2>Marketing en el K-Pop: Una Estrategia Global y Multicanal</h2>
+        <p>
+            El marketing en el K-Pop es un componente fundamental para el éxito global del género. Las agencias y compañías detrás de los grupos suelen implementar estrategias multifacéticas que van desde la producción musical hasta campañas digitales y eventos integrales que conectan emocionalmente con los fans.
+        </p>
+        <p>
+            Uno de los pilares del marketing en el K-Pop es el uso intensivo y eficaz de las redes sociales y plataformas digitales como YouTube, TikTok, Instagram, y Twitter. Estas plataformas permiten a los grupos mantener una comunicación constante y cercana con su audiencia, compartiendo desde contenido casual hasta videos musicales y promociones oficiales.
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Social_Media_icons.png" alt="Iconos de redes sociales" class="merch-image" />
+        <p>
+            Además, las campañas virales y los desafíos de baile (dance challenges) en redes sociales son estrategias recurrentes para aumentar la visibilidad de los lanzamientos musicales y fortalecer la comunidad global de fans. Ejemplos como el fenómeno “Gangnam Style” de Psy o más recientes como "Dynamite" de BTS, ilustran cómo el contenido puede volverse viral y alcanzar audiencias masivas.
+        </p>
+        <p>
+            El branding visual es otro aspecto clave. Desde la estética cuidada de los videos musicales, hasta la imagen coordinada de los integrantes con conceptos específicos para cada álbum o gira, todo está pensado para generar una identidad de marca sólida y reconocible.
+        </p>
+        <p>
+            Las colaboraciones con marcas internacionales de lujo y tecnología, por ejemplo, el patrocinio de BTS por Louis Vuitton o BLACKPINK siendo embajadoras de marcas como Chanel y Dior, ejemplifican la poderosa fusión entre música, moda y marketing que potencia la presencia global del K-Pop.
+        </p>
+        <p>
+            Finalmente, la integración de merchandising, conciertos en vivo, fan meetings y experiencias digitales (como reality shows y plataformas virtuales) construyen un ecosistema que mantiene a los fans comprometidos y leales, generando una rentabilidad sostenida para las agencias y un impacto cultural extendido.
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/BTS_Louis_Vuitton_Collection.jpg" alt="BTS en campaña Louis Vuitton" class="merch-image" />
+        <p>
+            En conclusión, el marketing del K-Pop es una combinación de creatividad, tecnología, y gestión de comunidad, que redefine cómo la industria musical se conecta con su público a nivel global.
+        </p>
+    </section>
+</main>
+&nbsp;
+&nbsp;
 
+<footer>
+    &copy; 2024 Merchandising y Marketing K-Pop. Todos los derechos reservados.
+</footer>
+&nbsp;
+&nbsp;
 
-
-</p><p>Resulta lógico pensar que las estrategias de publicidad del K-Pop han sido tan exitosas para su posicionamiento que marcas globales como <em>Louis Vuitton</em>, MAC, <em>Hyundai</em> y Dior —por mencionar algunas— han apostado por elegir a integrantes o agrupaciones completas como embajadores de marca.
-
-
-
-</p><p>Sin embargo, no podemos dejar de lado el desarrollo de las estrategias publicitarias promocionales propias de los grupos del K-Pop que considero han sido fundamentales como medio de creación de identidad de marca.
-
-
-
-</p><p>De este modo, un aspecto que me entusiasma como estudiante de publicidad y como una fan del K-Pop es el <em>merchandising</em>, una estrategia de publicidad la cual “hace referencia a la promoción de bienes o servicios en un punto de venta determinado […] busca atraer a clientes potenciales de manera asertiva, a través de una presentación visual llamativa.” (Equipo docente IL3-UB, 2021).
-
-
-
-</p><h3 class="wp-block-heading" id="toc_merchandising-en-el-k-pop">Merchandising en el K-Pop</h3>
-
-
-
-<p>El <strong><em>merchandising</em> en el K-Pop</strong> es tan amplio que se puede elegir entre una gran variedad de opciones como ropa, peluches, accesorios, zapatos, materiales escolares, artículos del hogar, muebles, contenido multimedia en formato digital o físico, etc., los cuales van de la mano del <em>branding</em> perteneciente a cada grupo musical o bien pueden incluir una alianza de marca.
-
-
-
-</p><p>Pareciera que no hay mucha diferencia entre el <em>merchandising</em> del K-Pop y marcas como Disney, sin embargo, a pesar de las similitudes que podamos encontrar, la diferencia radica en la manera que presentan un producto o servicio a sus consumidores y el aprovechamiento de la imagen del grupo/solista, la realidad virtual, los videojuegos y el desarrollo de elementos del K-Pop.
-
-
-
-</p><p>Un ejemplo del aprovechamiento de la imagen son los <em>lightsticks</em>, unos palos de luz o “bong” en coreano (<em>Ticketmaster</em>, 2020), con diseños únicos de cada grupo y que se utilizan normalmente en conciertos. BIGBANG fue el primer grupo en crear un <em>lightstick</em> oficial, el cual tiene forma de corona que emite una luz dorada, uno de sus tres colores oficiales.
-
-
-
-</p><p>El impacto del <em>lightstick</em> fue tan grande que desde entonces ha sido un elemento con el que cuenta la mayoría de los grupos. Es aquí donde podemos ver que el <em>merchandising</em> sirve incluso hasta para mejorar la experiencia de un evento.</p>
-
-
-
-<p>Otro ejemplo de cómo los artículos con la imagen de los artistas son comercializados y utilizados para su promoción son los álbumes, los cuales normalmente incluyen el o los CD’s, un póster coleccionable, un libro de fotos (<em>photobook</em>), un libro de letras de las canciones (<em>lyric book</em>) y, por supuesto, una o varias <em>photocards</em> sorpresa.
-
-
-
-</p><p>Es decir, unas tarjetas que contienen una fotografía por las cuales, me atrevo a decir, nos emocionamos mucho, pues siempre es excitante saber qué miembro de la banda nos tocó y mucho mejor si es de nuestros/nuestras <em>bias</em>, término que se utiliza para designar a nuestro integrante favorito.
-
-
-
-</p><p>Asimismo, otro ejemplo se encuentra en los puntos de venta, uno de los mayores enfoques que tiene el <em>merchandising</em>. BTS ha sido de los únicos grupos que ha implementado una <em>Pop Up Store</em>, una tienda temporal diseñada entorno a la marca ubicada en zonas estratégicas en diferentes países alrededor del mundo, aspecto que muy rara vez he podido encontrar en otras marcas y que sin duda hace la diferencia, pues genera mucha expectativa entre los fans la manera en que la tienda está diseñada y el diverso contenido que se vende.
-
-
-
-</p><p>Finalmente, la implementación de la tecnología y los videojuegos ha sido muy importante. La realidad virtual es un aspecto que ahora se ofrece al debutar un grupo, como es el caso de <em>Aespa</em>, un grupo perteneciente a <em>SM Entertainment</em> que presenta a sus integrantes de manera física y virtual.
-
-
-
-</p><p>Esto sin duda es un plus pues brinda contenido digital enfocado en la realidad virtual, obteniendo un mayor alcance del público. Esto mismo sucede con los videojuegos, un ejemplo clave es <em>League of Legends</em>, el cual desarrolló un grupo femenino virtual llamado K/DA conformado por diversas artistas del K-Pop, entre ellas <em>Soyeon</em> y <em>Miyeon</em> de (G)i-dle, <em>Jihyo</em>, <em>Sana</em> y <em>Chaeyoung</em> de <em>Twice</em>, quienes ya tienen un álbum para el videojuego llamado <em>All Out</em> disponible en plataformas como <em>Spotify</em>, <em>YouTube</em> y <em>Apple Music</em>.
-
-
-
-</p><p>En resumen, la publicidad sigue teniendo un papel sumamente importante para el posicionamiento y manejo de las marcas, pero sin lugar a dudas estrategias como el <em>merchandising</em> marcan la diferencia como hemos podido observar.
-
-
-
-</p><p>En el contexto del K-Pop el <em>merchandising</em> es fundamental como medio de creación de imagen de marca e incluso para generar lealtad y valor entre empresa-cliente, utilizando áreas de oportunidad como la tecnología y los videojuegos.
-
-
-
-</p><p>Además, sería muy interesante que marcas que no pertenecen al área del entretenimiento pudieran optar por esta estrategia publicitaria, pues sin duda desarrollar mercancía para uno como consumidor nos hace sentir incluidos, escuchados y nos da también una identidad.
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
 </html>
+&nbsp;
+&nbsp;
