@@ -1,0 +1,306 @@
+body {
+    font-family: monospace, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilo del header */
+header {
+    background-color: #e0048c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilo del menú de navegación */
+nav {
+    background-color: #444;
+    position: relative;
+    z-index: 999; /* Asegura que esté por encima de otras capas */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1000;
+}
+
+nav ul li {
+    position: relative;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 5rem;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #444;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Submenús */
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-top: 2px solid rgb(255, 0, 230);
+    display: none;
+    z-index: 1001;
+    width: max-content;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+/* Sección principal con contenido */
+section {
+    position: relative;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .big-shoulders{
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .toggle-content {
+    display: none;
+    }
+
+    h1, h2, h3{
+        font-family: "Rock Salt", cursive;
+    }
+    table{
+        border: 1px solid #ffffff; border-collapse: collapse; width: 100%; 
+    }
+    table td:first-child{
+        font-family: "Big Shoulders", sans-serif;
+        font-weight: 400;
+        padding: 10px;
+    }
+    tr:nth-child(even){background-color: #e0048c;}
+
+    table td:not(:first-child){
+
+        font-family: "Lato", sans-serif;  
+        padding: 1rem;
+
+    }
+    th,td{
+        width: 40%; 
+        padding: 10px;
+    }
+    .small-image {
+  width: 150px;  
+  height: auto;  
+}header {
+    background-color: #e0048c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;  /* centra el contenido dentro del header */
+  }
+  
+  .logo-container {
+    display: inline-flex;  /* convierte en flex pero se comporta como inline para centrar */
+    flex-direction: column; /* apila imagen y texto verticalmente */
+    align-items: center;   /* centra horizontalmente */
+    gap: 10px;             /* espacio entre imagen y texto */
+    margin: 0 auto;        /* centra el contenedor si fuera block */
+  }
+  
+  .logo {
+    height: auto;
+    display: block;
+  }
+  
+
+
+/* Estilo del menú de navegación */
+nav {
+    position: relative;
+    z-index: 999; /* Asegura que esté por encima de otras capas */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1000;
+}
+
+nav ul li {
+    position: relative;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 5rem;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #444;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Submenús */
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-top: 2px solid rgb(255, 0, 234);
+    display: none;
+    z-index: 1001;
+    width: max-content;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+/* Sección principal con contenido */
+section {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+:root {
+    --black: #0A0A0A;
+    --dark: #121212;
+    --darker: #080808;
+    --darkest: #050505;
+    --light: #FFFFFF;
+    --light-70: rgba(255, 255, 255, 0.7);
+    --primary: #e0048c; /* Color púrpura, icónico en BTS */
+    --primary-dark: #e0048c;
+    --accent: #E9D7FF; /* Color lila claro */
+    --accent-dark: #B59AE4;
+    --section-bg: #101010;
+    --card-bg: #181818;
+    --header-bg: rgba(10, 10, 10, 0.98);
+    --border: 1px solid rgba(102, 81, 255, 0.1);
+    --border-hover: 1px solid var(--primary);
+    --shadow: 0 10px 25px rgba(102, 81, 255, 0.5);
+    --shadow-hover: 0 15px 35px rgba(102, 81, 255, 0.15);
+    --bts-gradient: linear-gradient(135deg, var(--primary), var(--accent));
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Burbank Big Condensed', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s ease;
+  }
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  .logo-text {
+    font-size: 2rem;
+    color: var(--primary);
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(102, 81, 255, 0.5);
+  }
+  nav a {
+    color: var(--light);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 0;
+    position: relative;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+  }
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: var(--primary);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  nav a:hover::after {
+    width: 100%;
+  }
+  nav a:hover {
+    color: var(--primary);
+    text-shadow: 0 0 10px rgba(102, 81, 255, 0.5);
+  }
+  nav a.active {
+    color: var(--primary);
+  }
+  nav a.active::after {
+    width: 100%;
+  }

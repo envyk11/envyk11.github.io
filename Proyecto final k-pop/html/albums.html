@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto programación web</title>
+    <link rel="icon" type="image/png" href="../recursos/K-pop logo.png">
+    <link rel="stylesheet" href="../css/albums_style.css">
+    <script src="../js/js"></script> 
+    <meta charset="utf-8">
+    <meta name="description" content="Álbumes del grupo BTS">
+    <meta name="author" content="Saori Jasso, Andres Diaz, y Bootstrap">
+    <title>Álbumes BTS</title>
+    <link rel="icon" type="image/x-icon" href="Img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        table ul {
+            list-style-type: disc !important;
+            padding-left: 1.5em !important;
+            margin: 0 !important;
+        }
+    </style>
+</head>
+<body>  
+    <header>
+         <div class="logo-container">
+            <a href="#"><img src="../recursos/K-pop logo.png" class="logo"></a>
+            <h2>K-pop stars</h2>
+    </header>
+    <nav>
+        <ul>                                                                                                                                                                                                                        
+            <li><a href="index.html">Inicio</a>
+                <ul>
+                    <li><a href="#Bienvenida">Bienvenida</a></li>
+                    <li><a href="#Historia del K-pop">historia del k-pop</a></li>
+                    <li><a href="#Las Empresas Más Influyentes en el K-pop">Las Empresas Más Influyentes en el K-pop</a></li>
+                    <li><a href="#Grupos Más Influyentes y Qué los Destaca">Grupos Más Influyentes y Qué los Destaca</a></li>
+                    <li><a href="#¿En Qué Destaca el K-pop?">¿En Qué Destaca el K-pop?</a></li>
+                </ul></li>
+            <li><a href='grupos.html'>Grupos</a>
+                <ul>
+            <li><a href="#">BLACKPINK</a></li>
+            <li><a href="#">BTS</a></li>
+            <li><a href="#">EXO</a></li>
+            <li><a href="#">GOT7</a></li>
+            <li><a href="#">LOONA</a></li>
+            <li><a href="#">NCT</a></li>
+            <li><a href="#">RED VELVET</a></li>
+            <li><a href="#">SEVENTEEN</a></li>
+            <li><a href="#">STRAY KIDS</a></li>
+            <li><a href="#">TWICE</a></li>
+                </ul></li>
+            <li><a href='albums.html'>Albums</a></li>
+            <li><a href='fandom.html'>Fandom</a></li>
+            <li><a href='conciertos.html'>Conciertos</a></li>
+            <li><a href='merchandising.html'>Merchandising</a></li>
+            <li><a href='contacto.html'>Contacto</a>
+            <ul>
+                <li><a href="#">Kaled de Jesús Rodríguez García</a></li>
+                <li><a href="#">Luis Fernando Baranda Saucedo</a></li>
+            </ul></li>
+            <li><a href='referencias.html'>Referencias</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+
+    <h1 class="titleLibros text-center" style="color: #a22571;">ÁLBUMES DESTACADOS DE BTS</h1>
+
+    <p style="background-color: #a22571; color: white; padding: 15px; border-radius: 8px;" class="custom-paragraph mx-auto w-75 text-center">
+        BTS es uno de los grupos de K-pop más influyentes a nivel mundial. Aquí te presentamos algunos de sus álbumes más importantes que marcaron su carrera y evolución musical.
+    </p>
+
+    <!-- Videos destacados -->
+    <div class="row justify-content-center g-0 my-4" style="background-color: rgba(255, 119, 180, 0.193);">
+        <div class="col-md-4 d-flex justify-content-center mb-3">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/MBdVXkSdhwU" title="Dynamite - BTS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-3">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/ks6HXw9g3kM" title="Butter - BTS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-3">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/gdZLi9oWNZg" title="Boy With Luv - BTS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Tabla de álbumes -->
+    <div class="tabla-contenedor">
+        <div class="table-responsive mx-auto" style="width: 80%;">
+            <table class="text-center align-middle" style="background-color: #f4f4f4;">
+                <thead>
+                    <tr>
+                        <th colspan="3" class="thTable">Álbumes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="Img/MapOfTheSoul7.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Map of the Soul: 7">
+                        </td>
+                        <td>
+                            <img src="Img/BE.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="BE">
+                        </td>
+                        <td>
+                            <img src="Img/LoveYourselfAnswer.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Love Yourself: Answer">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="nameBook" style="color:#435c3a;">Map of the Soul: 7</th>
+                        <th class="nameBook" style="color:black;">BE</th>
+                        <th class="nameBook" style="color:#3f525b;">Love Yourself: Answer</th>
+                    </tr>
+                    <tr>
+                        <td class="nameAuthor">Big Hit Entertainment</td>
+                        <td class="nameAuthor">Big Hit Entertainment</td>
+                        <td class="nameAuthor">Big Hit Entertainment</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="textTable">
+                                Lanzado en 2020, este álbum celebra los 7 años de BTS con temas que exploran la identidad y la autoaceptación.
+                            </p>
+                        </td>
+                        <td>
+                            <p class="textTable">
+                                Álbum lanzado en 2020 que refleja el sentimiento de estar "en casa" y la conexión durante tiempos difíciles.
+                            </p>
+                        </td>
+                        <td>
+                            <p class="textTable">
+                                Parte de la serie Love Yourself, lanzado en 2018, contiene grandes éxitos y habla sobre el amor propio y las relaciones.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class="text-start textTable">
+                                <li><strong style="color:#435c3a;">Publicación:</strong> 2020</li>
+                                <li><strong style="color:#435c3a;">Canciones destacadas:</strong> "ON", "Black Swan", "Filter"</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="text-start textTable">
+                                <li><strong>Publicación:</strong> 2020</li>
+                                <li><strong>Canciones destacadas:</strong> "Dynamite", "Life Goes On", "Blue & Grey"</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="text-start textTable">
+                                <li><strong style="color:#3f525b;">Publicación:</strong> 2018</li>
+                                <li><strong style="color:#3f525b;">Canciones destacadas:</strong> "Fake Love", "IDOL", "Epiphany"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </td>
+                        <td>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </td>
+                        <td>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="btn-comprar" href="https://www.amazon.com/Map-Soul-7-BTS/dp/B085PXV17W" target="_blank">Comprar</a>
+                        </td>
+                        <td>
+                            <a class="btn-comprar" href="https://www.amazon.com/BE-BTS/dp/B08JGMVQ4D" target="_blank">Comprar</a>
+                        </td>
+                        <td>
+                            <a class="btn-comprar" href="https://www.amazon.com/Love-Yourself-Answer-BTS/dp/B07F7XHTX3" target="_blank">Comprar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Álbumes destacados de BLACKPINK -->
+<h1 class="titleLibros text-center" style="color: #ff0099;">ÁLBUMES DESTACADOS DE BLACKPINK</h1>
+
+<p style="background-color: #ff0099; color: white; padding: 15px; border-radius: 8px;" class="custom-paragraph mx-auto w-75 text-center">
+    BLACKPINK ha revolucionado el K-pop con su estilo único y empoderamiento femenino. Aquí algunos de sus álbumes más icónicos.
+</p>
+
+<!-- Videos destacados BLACKPINK -->
+<div class="row justify-content-center g-0 my-4" style="background-color: rgba(255, 192, 203, 0.2);">
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/2S24-y0Ij3Y" title="DDU-DU DDU-DU - BLACKPINK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/ioNng23DkIM" title="How You Like That - BLACKPINK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/FzVR_fymZw4" title="Shut Down - BLACKPINK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Tabla de álbumes BLACKPINK -->
+<div class="tabla-contenedor">
+    <div class="table-responsive mx-auto" style="width: 80%;">
+        <table class="text-center align-middle" style="background-color: #f4f4f4;">
+            <thead>
+                <tr>
+                    <th colspan="3" class="thTable">Álbumes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Img/TheAlbum.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="The Album">
+                    </td>
+                    <td>
+                        <img src="Img/BornPink.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Born Pink">
+                    </td>
+                    <td>
+                        <img src="Img/SquareUp.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Square Up">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="nameBook" style="color:#e91e63;">The Album</th>
+                    <th class="nameBook" style="color:#9c27b0;">Born Pink</th>
+                    <th class="nameBook" style="color:#673ab7;">Square Up</th>
+                </tr>
+                <tr>
+                    <td class="nameAuthor">YG Entertainment</td>
+                    <td class="nameAuthor">YG Entertainment</td>
+                    <td class="nameAuthor">YG Entertainment</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="textTable">
+                            Lanzado en 2020, incluye colaboraciones internacionales y muestra una evolución musical del grupo.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            Álbum de 2022 que mezcla sonidos potentes con letras empoderadoras, incluyendo "Shut Down".
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            Mini-álbum debut de 2018, con éxitos como "DDU-DU DDU-DU" que marcaron su ascenso global.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#e91e63;">Publicación:</strong> 2020</li>
+                            <li><strong style="color:#e91e63;">Canciones destacadas:</strong> "How You Like That", "Lovesick Girls"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#9c27b0;">Publicación:</strong> 2022</li>
+                            <li><strong style="color:#9c27b0;">Canciones destacadas:</strong> "Pink Venom", "Shut Down"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#673ab7;">Publicación:</strong> 2018</li>
+                            <li><strong style="color:#673ab7;">Canciones destacadas:</strong> "DDU-DU DDU-DU", "Forever Young"</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/BLACKPINK-Album-Version-Photobook/dp/B08HF6LNX4" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/BLACKPINK-Born-Pink-Standard-Version/dp/B0BBZCS4P2" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/Square-Up-1st-Mini-Album/dp/B07DCQNRRP" target="_blank">Comprar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<h1 class="titleLibros text-center" style="color: #585858;">ÁLBUMES DESTACADOS DE EXO</h1>
+
+<p style="background-color: #585858; color: white; padding: 15px; border-radius: 8px;" class="custom-paragraph mx-auto w-75 text-center">
+    EXO es uno de los grupos más populares del K-pop, conocido por su talento vocal, coreografías impecables y conceptos únicos. A continuación, te mostramos algunos de sus álbumes más icónicos.
+</p>
+
+<!-- Videos destacados -->
+<div class="row justify-content-center g-0 my-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/pSudEWBAYRE" title="Love Shot - EXO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/IdssuxDdqKk" title="Call Me Baby - EXO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/1cL7sJjB9Lw" title="Ko Ko Bop - EXO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Tabla de álbumes EXO -->
+<div class="tabla-contenedor">
+    <div class="table-responsive mx-auto" style="width: 80%;">
+        <table class="text-center align-middle" style="background-color: #f9f9f9;">
+            <thead>
+                <tr>
+                    <th colspan="3" class="thTable">Álbumes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Img/LoveShot.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Love Shot">
+                    </td>
+                    <td>
+                        <img src="Img/Exodus.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Exodus">
+                    </td>
+                    <td>
+                        <img src="Img/TheWar.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="The War">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="nameBook" style="color:#bb1e10;">Love Shot</th>
+                    <th class="nameBook" style="color:#a6771f;">Exodus</th>
+                    <th class="nameBook" style="color:#1b6d5f;">The War</th>
+                </tr>
+                <tr>
+                    <td class="nameAuthor">SM Entertainment</td>
+                    <td class="nameAuthor">SM Entertainment</td>
+                    <td class="nameAuthor">SM Entertainment</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="textTable">
+                            Reempaquetado de "Don't Mess Up My Tempo", lanzado en 2018. Con un sonido maduro y elegante, se convirtió en uno de los más vendidos.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            Este álbum de 2015 marcó un antes y un después para EXO, con un sonido más pulido y fuerte presencia internacional.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            Lanzado en 2017, "The War" presenta una vibra veraniega y tropical, mostrando una nueva faceta del grupo.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#bb1e10;">Publicación:</strong> 2018</li>
+                            <li><strong style="color:#bb1e10;">Canciones destacadas:</strong> "Love Shot", "Tempo", "Trauma"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#a6771f;">Publicación:</strong> 2015</li>
+                            <li><strong style="color:#a6771f;">Canciones destacadas:</strong> "Call Me Baby", "Transformer", "El Dorado"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#1b6d5f;">Publicación:</strong> 2017</li>
+                            <li><strong style="color:#1b6d5f;">Canciones destacadas:</strong> "Ko Ko Bop", "The Eve", "What U do?"</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/EXO-LOVE-SHOT/dp/B07L6Q6ZCQ" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/EXO-EXODUS-Ver-Korean-Version/dp/B00V8JP1QA" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/War-KoKoBop-Korean-Version/dp/B073WYYK1S" target="_blank">Comprar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<h1 class="titleLibros text-center" style="color: #1a1a1a;">ÁLBUMES DESTACADOS DE GOT7</h1>
+
+<p style="background-color: #1a1a1a; color: white; padding: 15px; border-radius: 8px;" class="custom-paragraph mx-auto w-75 text-center">
+    GOT7 es un grupo surcoreano conocido por su energía, carisma y versatilidad musical. Con integrantes de diversas nacionalidades, han conquistado a fans de todo el mundo con su estilo único y performances inolvidables.
+</p>
+
+<!-- Videos destacados -->
+<div class="row justify-content-center g-0 my-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/HzOjwL7IP_o" title="NOT BY THE MOON - GOT7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/6tl-MG38-0E" title="Lullaby - GOT7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/1cB2tuiP7Mc" title="Just Right - GOT7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Tabla de álbumes GOT7 -->
+<div class="tabla-contenedor">
+    <div class="table-responsive mx-auto" style="width: 80%;">
+        <table class="text-center align-middle" style="background-color: #f9f9f9;">
+            <thead>
+                <tr>
+                    <th colspan="3" class="thTable">Álbumes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Img/Dye.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="DYE">
+                    </td>
+                    <td>
+                        <img src="Img/PresentYou.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Present: YOU">
+                    </td>
+                    <td>
+                        <img src="Img/JustRight.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Just Right">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="nameBook" style="color:#8a2be2;">DYE</th>
+                    <th class="nameBook" style="color:#ff8c00;">Present: YOU</th>
+                    <th class="nameBook" style="color:#1e90ff;">Just Right</th>
+                </tr>
+                <tr>
+                    <td class="nameAuthor">JYP Entertainment</td>
+                    <td class="nameAuthor">JYP Entertainment</td>
+                    <td class="nameAuthor">JYP Entertainment</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="textTable">
+                            "DYE" muestra una madurez artística en GOT7, con un enfoque dramático y sofisticado. El sencillo "NOT BY THE MOON" destaca por su poderosa interpretación.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            Este álbum incluye solos de todos los miembros, mostrando sus estilos individuales. "Lullaby" fue el tema principal y está en varios idiomas.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            "Just Right" es un miniálbum alegre y colorido que transmite un mensaje positivo de autoestima, siendo uno de los favoritos del público joven.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#8a2be2;">Publicación:</strong> 2020</li>
+                            <li><strong style="color:#8a2be2;">Canciones destacadas:</strong> "NOT BY THE MOON", "Poison", "Crazy"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#ff8c00;">Publicación:</strong> 2018</li>
+                            <li><strong style="color:#ff8c00;">Canciones destacadas:</strong> "Lullaby", "Enough", "I Am Me"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#1e90ff;">Publicación:</strong> 2015</li>
+                            <li><strong style="color:#1e90ff;">Canciones destacadas:</strong> "Just Right", "Before the Full Moon Rises", "My Whole World"</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/GOT7-DYE-Korean-Version/dp/B0868YG8MH" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/Got7-Present-You-Version-Korean/dp/B07G3M8Z34" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/Just-Right-Got7/dp/B011HZJB64" target="_blank">Comprar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<h1 class="titleLibros text-center" style="color: #6b1d5c;">ÁLBUMES DESTACADOS DE LOONA</h1>
+
+<p style="background-color: #6b1d5c; color: white; padding: 15px; border-radius: 8px;" class="custom-paragraph mx-auto w-75 text-center">
+    LOONA es un grupo femenino surcoreano reconocido por su innovador concepto de debut individual y subunidades. Su música combina pop experimental, electrónica y mensajes de empoderamiento y unidad, construyendo un universo narrativo único.
+</p>
+
+<!-- Videos destacados -->
+<div class="row justify-content-center g-0 my-4" style="background-color: rgba(107, 29, 92, 0.05);">
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/xeNv4Kvhb3Y" title="Butterfly - LOONA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/GEo5bmUKFvI" title="Paint The Town - LOONA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/Oy0JBJw3Eik" title="Hi High - LOONA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Tabla de álbumes LOONA -->
+<div class="tabla-contenedor">
+    <div class="table-responsive mx-auto" style="width: 80%;">
+        <table class="text-center align-middle" style="background-color: #f9f9f9;">
+            <thead>
+                <tr>
+                    <th colspan="3" class="thTable">Álbumes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Img/xx.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="[X X]">
+                    </td>
+                    <td>
+                        <img src="Img/ptt.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="[&]">
+                    </td>
+                    <td>
+                        <img src="Img/hihigh.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="[+ +]">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="nameBook" style="color:#6b1d5c;">[X X]</th>
+                    <th class="nameBook" style="color:#8a2be2;">[&]</th>
+                    <th class="nameBook" style="color:#ff69b4;">[+ +]</th>
+                </tr>
+                <tr>
+                    <td class="nameAuthor">Blockberry Creative</td>
+                    <td class="nameAuthor">Blockberry Creative</td>
+                    <td class="nameAuthor">Blockberry Creative</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="textTable">
+                            "[X X]" es una reedición de "[+ +]" que consolidó la identidad artística de LOONA. Su canción "Butterfly" es un himno visual y sonoro de libertad e inclusión.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            "[&]" incluye potentes temas como "Paint The Town", y refleja una etapa más fuerte y madura del grupo, con influencias étnicas y producción épica.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            "[+ +]" fue el debut oficial como grupo completo. Alegre, juvenil y enérgico, muestra el encanto característico de LOONA con el tema "Hi High".
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#6b1d5c;">Publicación:</strong> 2019</li>
+                            <li><strong style="color:#6b1d5c;">Canciones destacadas:</strong> "Butterfly", "Satellite", "Curiosity"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#8a2be2;">Publicación:</strong> 2021</li>
+                            <li><strong style="color:#8a2be2;">Canciones destacadas:</strong> "Paint The Town", "Wow", "Dance On My Own"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#ff69b4;">Publicación:</strong> 2018</li>
+                            <li><strong style="color:#ff69b4;">Canciones destacadas:</strong> "Hi High", "Stylish", "Perfect Love"</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/Loona-Mini-Album-XX/dp/B07MWBRDF4" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/LOONA-Album-Korean-Version/dp/B097YF18NR" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/Loona-Plus-Korean-Version/dp/B07FYD8FSF" target="_blank">Comprar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<h1 class="titleLibros text-center" style="color: #009688;">ÁLBUMES DESTACADOS DE NCT</h1>
+
+<p style="background-color: #009688; color: white; padding: 15px; border-radius: 8px;" class="custom-paragraph mx-auto w-75 text-center">
+    NCT (Neo Culture Technology) es un innovador grupo de K-pop con múltiples subunidades, cada una con su estilo y enfoque musical. Con una estructura única y en constante expansión, NCT ha redefinido el concepto de grupo global con integrantes de distintas nacionalidades y sonidos que van del R&B futurista al EDM experimental.
+</p>
+
+<!-- Videos destacados -->
+<div class="row justify-content-center g-0 my-4" style="background-color: rgba(0, 150, 136, 0.05);">
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/2OvyA5HnQ8M" title="NCT 127 - Kick It" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/EHluLUSj4lI" title="NCT U - Make A Wish" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/McqCwcT3zNY" title="NCT DREAM - Hot Sauce" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Tabla de álbumes NCT -->
+<div class="tabla-contenedor">
+    <div class="table-responsive mx-auto" style="width: 80%;">
+        <table class="text-center align-middle" style="background-color: #f9f9f9;">
+            <thead>
+                <tr>
+                    <th colspan="3" class="thTable">Álbumes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Img/kickit.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="NCT 127 - Neo Zone">
+                    </td>
+                    <td>
+                        <img src="Img/makeawish.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="NCT 2020 - Resonance Pt.1">
+                    </td>
+                    <td>
+                        <img src="Img/hotsauce.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="NCT DREAM - Hot Sauce">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="nameBook" style="color:#009688;">Neo Zone</th>
+                    <th class="nameBook" style="color:#00796B;">Resonance Pt.1</th>
+                    <th class="nameBook" style="color:#00BFA5;">Hot Sauce</th>
+                </tr>
+                <tr>
+                    <td class="nameAuthor">NCT 127</td>
+                    <td class="nameAuthor">NCT 2020 (U, 127, DREAM, WayV)</td>
+                    <td class="nameAuthor">NCT DREAM</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="textTable">
+                            "Neo Zone" consolidó el estatus de NCT 127 como una fuerza global, con su mezcla de hip hop, R&B y pop urbano. El tema “Kick It” se convirtió en un himno explosivo.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            "Resonance Pt.1" reunió a todos los miembros activos en un proyecto épico con múltiples conceptos y subunidades, destacando el potencial ilimitado de NCT.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            "Hot Sauce" marcó el primer full album de NCT DREAM. Lleno de energía juvenil y ritmos vibrantes, catapultó al grupo a nuevas alturas de popularidad.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#009688;">Publicación:</strong> 2020</li>
+                            <li><strong style="color:#009688;">Canciones destacadas:</strong> "Kick It", "Boom", "Love Me Now"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#00796B;">Publicación:</strong> 2020</li>
+                            <li><strong style="color:#00796B;">Canciones destacadas:</strong> "Make A Wish", "From Home", "Misfit"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#00BFA5;">Publicación:</strong> 2021</li>
+                            <li><strong style="color:#00BFA5;">Canciones destacadas:</strong> "Hot Sauce", "Dive Into You", "My Youth"</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/NCT-127-ZONE-2nd-Album/dp/B084DSJY46" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/NCT-2020-Resonance-Pt-1/dp/B08HRSSP61" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/NCT-Dream-1st-Album-Sauce/dp/B094DF5F51" target="_blank">Comprar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<h1 class="titleLibros text-center" style="color: #E91E63;">ÁLBUMES DESTACADOS DE RED VELVET</h1>
+
+<p style="background-color: #E91E63; color: white; padding: 15px; border-radius: 8px;" class="custom-paragraph mx-auto w-75 text-center">
+    Red Velvet es uno de los grupos femeninos más versátiles del K-pop, conocido por su dualidad musical: el lado “Red”, vibrante y pop, y el lado “Velvet”, sofisticado y R&B. Con un estilo único y conceptos visuales impactantes, han dejado una marca distintiva en la industria musical coreana.
+</p>
+
+<!-- Videos destacados -->
+<div class="row justify-content-center g-0 my-4" style="background-color: rgba(233, 30, 99, 0.05);">
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/UOxkGD8qRB4" title="Red Velvet - Bad Boy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/J_CFBjAyPWE" title="Red Velvet - Psycho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-3">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/ZK00ruXvaxe4" title="Red Velvet - Feel My Rhythm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Tabla de álbumes Red Velvet -->
+<div class="tabla-contenedor">
+    <div class="table-responsive mx-auto" style="width: 80%;">
+        <table class="text-center align-middle" style="background-color: #fef6f9;">
+            <thead>
+                <tr>
+                    <th colspan="3" class="thTable">Álbumes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Img/badboy.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Red Velvet - The Perfect Red Velvet">
+                    </td>
+                    <td>
+                        <img src="Img/psycho.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Red Velvet - The ReVe Festival: Finale">
+                    </td>
+                    <td>
+                        <img src="Img/feelmyrhythm.png" class="img-fluid animation-libros" style="max-height: 400px;" alt="Red Velvet - The ReVe Festival 2022: Feel My Rhythm">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="nameBook" style="color:#C2185B;">The Perfect Red Velvet</th>
+                    <th class="nameBook" style="color:#AD1457;">ReVe Festival: Finale</th>
+                    <th class="nameBook" style="color:#D81B60;">Feel My Rhythm</th>
+                </tr>
+                <tr>
+                    <td class="nameAuthor">Red Velvet</td>
+                    <td class="nameAuthor">Red Velvet</td>
+                    <td class="nameAuthor">Red Velvet</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="textTable">
+                            Este álbum incluye el icónico “Bad Boy”, considerado una obra maestra del estilo “Velvet”, elegante y seductor. Una de las eras más aclamadas del grupo.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            "Psycho" lidera este álbum recopilatorio que mezcla los tres lanzamientos del ReVe Festival. Un cierre espectacular que se convirtió en un clásico inmediato.
+                        </p>
+                    </td>
+                    <td>
+                        <p class="textTable">
+                            Con una estética barroca y mezcla de pop clásico y moderno, "Feel My Rhythm" representa el arte elevado de Red Velvet con una propuesta sonora y visual única.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#E91E63;">Publicación:</strong> 2018</li>
+                            <li><strong style="color:#E91E63;">Canciones destacadas:</strong> "Bad Boy", "Peek-A-Boo", "Kingdom Come"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#E91E63;">Publicación:</strong> 2019</li>
+                            <li><strong style="color:#E91E63;">Canciones destacadas:</strong> "Psycho", "Umpah Umpah", "Zimzalabim"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="text-start textTable">
+                            <li><strong style="color:#E91E63;">Publicación:</strong> 2022</li>
+                            <li><strong style="color:#E91E63;">Canciones destacadas:</strong> "Feel My Rhythm", "Rainbow Halo", "Beg For Me"</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><i class="far fa-star"></i>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/Red-Velvet-Perfect-2nd-Album/dp/B078WCT4R3" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/ReVe-Festival-Finale-Red-Velvet/dp/B082WP3QMW" target="_blank">Comprar</a>
+                    </td>
+                    <td>
+                        <a class="btn-comprar" href="https://www.amazon.com/Feel-My-Rhythm-Velvet-Photobook/dp/B09TYD3MYD" target="_blank">Comprar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+</body>
+</html>
